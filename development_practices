@@ -1,0 +1,88 @@
+UTC20151104
+
+These development practices largely follow the Urbit Contribution
+Guidelines, with additional protocols to support multiple
+projects. They are designed to scale with low administrative overhead
+from small to moderately sized codebases and project teams.
+
+General Principles:
+
+1. Keep IXT maintained repos as few as possible, bias contributions
+instead to upstream maintainers. Forks of non-organic repos are not
+considered to be under maintanence for this purpose.
+
+2. IXT repos, whether native or external forks, are never pushed to
+directly. All code changes are the result of a pull request from a
+development fork (to which the contributor has first-class push
+access) to the IXT repo test branch, then a PR from test to master (as
+conditions dictate).
+
+3. The canonical origin for IXT developed projects is the IXT repo
+origin branch. It is the responsibility of the project administrator
+to keep the IXT origin updated (e.g. if an external project's origin
+changes), so that contributor forks may pull from the correct
+environment to develop against.
+
+4. Contributor pull requests are preferred over granting collaborator
+status, to preserve the PR-only update of IXT canonical repos and
+allow contributors a separate public record of their work.
+
+5. Aside from assignation by IXT project admins, outside contributors
+to IXT repos are considered team members, and held to the same
+workflow standards.
+
+Three main project structures: Organic, External, Symbiotic.
+
+Organic: Projects conceived and begun entirely by Ix Technology the
+corporate entity, or for which ownership has been transferred to the
+company as if that criterion held.
+
+Workflow: 
+
+1. Project admin creates IxT project repo with two branches - master
+and test.
+
+2. Assign Team(s). Team members fork IxT repo, create personal branch
+dev
+
+3. Members develop on personal dev branches, push to personal remote
+forks
+
+4. Members submit pull requests from personal dev to IxT test.
+
+5. Project admin merges pull request
+
+6. Project admin submits pull request from IxT test to master, merges.
+
+7. Team members pull IxT master to synchronize with latest production
+code.
+
+External: Projects begun outside of Ix Technology, by entities not
+currently associated with the company, to which Ix Technology wishes
+to contribute.
+
+Workflow:
+
+1. Project admin creates IXT fork of external repo, adds branch test
+if not present.
+
+2 - 5. Workflow continues as per steps 2 - 5 for Organic projects.
+
+6. Project admin submits pull request from IXT test branch to external
+project, following their PR guidelines.
+
+7. Project admin pulls new canonical image from external repo,
+team members resynchronize development forks from IXT fork.
+
+Symbiotic: Projects begun outside of Ix Technology by entities
+currently associated with the company, who wish to retain independent
+ownership.
+
+1 - 7. As per steps 1-7 for External projects, with the exception that
+the owner of the repo may bypass submitting pull requests to the IXT
+fork, and follow their own practices in maintaining their codebase. It
+is recommended that development still follow a dev->test->master merge
+flow, marked by public pull requests, to bolster transparency and
+afford appropriate intervals to incorporate IXT and external
+contributions.
+
