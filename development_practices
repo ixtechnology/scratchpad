@@ -115,11 +115,13 @@ non-project specific topics.
 Location: 
 
 Default to discussion on the dev@ixtech.net mailing list. Mirror
-e-mail to a local mail client for off-line viewing/storage redundancy.
+e-mail to a local mail client for off-line viewing/storage
+redundancy. The ixtechnology repository "scratchpad" may also be used
+for strictly project-oriented discussion about codebases that do not
+yet exist under IxTech's jurisdiction.
 
-
-Organic: Issues concerning individual projects entirely within the
-IxTech fold.
+Organic: Issues concerning existing individual projects entirely
+within the IxTech fold.
 
 Location:
 
@@ -181,7 +183,7 @@ offline-issues: https://github.com/stephencelis/ghi
 
 Other suggestions - especially for local issue management - welcome.
 
-Project idea: combine the last two tools to allow offline/asynchronous
-GitHub Issues management with on the command line, ideally in a
-language with a less massive dependency footprint than Node.js or
-Ruby.
+Project idea: combine offline-issues and ghi to allow
+offline/asynchronous cli GitHub Issues management with local
+mirroring, ideally in a language with a less massive dependency
+footprint than Node.js or Ruby.
