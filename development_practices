@@ -5,7 +5,14 @@ Guidelines, with additional protocols to support multiple
 projects. They are designed to scale with low administrative overhead
 from small to moderately sized codebases and project teams.
 
-General Principles:
+ToC:
+
+I.   General Principles
+II.  Workflows
+III. Discussion
+IV. Tools
+
+I. General Principles:
 
 1. Keep IXT maintained repos as few as possible, bias contributions
 instead to upstream maintainers. Forks of non-organic repos are not
@@ -30,6 +37,8 @@ allow contributors a separate public record of their work.
 5. Aside from assignation by IXT project admins, outside contributors
 to IXT repos are considered team members, and held to the same
 workflow standards.
+
+II. Workflows
 
 Three main project structures: Organic, External, Symbiotic.
 
@@ -86,3 +95,93 @@ flow, marked by public pull requests, to bolster transparency and
 afford appropriate intervals to incorporate IXT and external
 contributions.
 
+III. Discussion
+
+It is critical that feature requests, design debates, and other
+comments on IxTech and IxTech involved projects be by default public
+and later searchable. Development, particularly open source
+development, only flourishes when the meta-data of discussion is
+transparent and eidetically remembered. The following establishes
+where such discourse takes place by default, to facilitate these
+qualities.
+
+To the project categories in section II, consider the additional
+discussion category "unspecified":
+
+Unspecified: Commentary on Ix Technology the company, the behavior of
+its members and associates, future project ideas, and other
+non-project specific topics.
+
+Location: 
+
+Default to discussion on the dev@ixtech.net mailing list. Mirror
+e-mail to a local mail client for off-line viewing/storage redundancy.
+
+
+Organic: Issues concerning individual projects entirely within the
+IxTech fold.
+
+Location:
+
+The tracking system associated with the ixtechnology canonical
+repo. Mirror track system issues to local storage.
+
+External: Two cases - i. Commentary on the project itself.
+ii. Intra-IxTech discussion of IxTech contributions to an external
+project.
+
+Location:
+
+i. By default, commentary on external projects should take via the
+project's native mechanism, then mirrored for Ix Technology's own
+recollection. If a native converstaion becomes too IxTech specific, it
+can always be converted to case ii.
+
+ii. The tracker system associated with the ixtechnology canonical fork
+of the external project, mirrored to local storage.
+
+Symbiotic: Identical to External, aside from the familiarity of the
+personages involved.
+
+Location:
+
+i. As per External-i.
+
+ii. As per External-ii.
+
+IV. Tools
+
+The above practices assume fairly generic development tools, but are
+designed with git or a git compatible distributed version control
+system and associated tracker program in mind.
+
+Tool resources:
+
+DVCS:
+
+git: http://git-scm.com/
+
+Local mail client:
+
+mutt: http://www.mutt.org/
+
+GitHub cli remote repo creation, forking, pull requests:
+
+hub: https://hub.github.com/ 
+Do not feel the need to alias "git" to "hub" as per the documentation;
+experience suggests this only causes confusion in the long run.
+
+GitHub cli Issues tracker system utility:
+
+ghi: https://github.com/stephencelis/ghi
+
+Mirror GitHub issues to view offline, but not otherwise manage:
+
+offline-issues: https://github.com/stephencelis/ghi
+
+Other suggestions - especially for local issue management - welcome.
+
+Project idea: combine the last two tools to allow offline/asynchronous
+GitHub Issues management with on the command line, ideally in a
+language with a less massive dependency footprint than Node.js or
+Ruby.
